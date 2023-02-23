@@ -1,6 +1,7 @@
 :root{
     height: 100%;
     width: 100%;
+    --max-width: 80vw;
 }
 body{
     height: 100%;
@@ -11,29 +12,39 @@ body{
 }
 .accordion{
     background-color: #f9f9f9;
-
+    width: var(--max-width);
 
 }
-
-.answer, .question{
+.answer{
+    padding-left: 2.5rem;#
     font-size: .875rem;
+}
+.answer, .question{
+
     line-height: 1.25rem;
     text-align: left;
-    padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border: 1px solid rgb(229 231 235);
+    border: 1px solid rgba(229, 231, 235, 0.474);
  
 }
 .question{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 1.125rem;
+    padding-left: 1.25rem;
 }
 .questionIcon{
     height: .875rem;
     cursor: pointer;
+    margin-left: 15px;
+    transition: ease-in-out 0.3s;
 }
 .hidden{
     display: none;
+}
+.active{
+    transform: rotate(180deg);
 }
