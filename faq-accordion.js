@@ -1,5 +1,5 @@
-const toggleIcons = document.querySelectorAll(".questionIcon")
-const answers = document.querySelectorAll(".answer")
+const toggleIcons = document.querySelectorAll(".faqQuestionIcon")
+const answers = document.querySelectorAll(".faqAnswer")
 
 toggleIcons.forEach((icon, index) => {
     icon.addEventListener("click", function(){
@@ -10,8 +10,8 @@ toggleIcons.forEach((icon, index) => {
 
 function toggleAnswer(index){
     console.log(index)
-    answers[index].classList.toggle("hidden")
+    answers[index].classList.toggle("faqHidden")
 }
 function toggleIcon(index){
-    toggleIcons[index].classList.toggle("active")
+    toggleIcons[index].classList.toggle("faqActive")
 }
